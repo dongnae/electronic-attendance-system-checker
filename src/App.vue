@@ -76,7 +76,7 @@ export default {
           if (this.isDialogOpened) return;
           let close = () => {
             this.isDialogOpened = false;
-            this.prev = this.num = this.name = "";
+            this.dialogMessage = this.prev = this.num = this.name = "";
           }
           let code = ret.data.result;
 
@@ -244,7 +244,18 @@ input:focus {
   padding: 1rem;
 }
 
+.desc-container > p {
+  text-align: center;
+}
+
 .camera > *:nth-child(1), .camera > *:nth-child(3) {
   /* display: none !important; */
+}
+
+@media (max-width: 700px) {
+  .desc-container {
+    padding: 5rem .5rem;
+    width: 90vw;
+  }
 }
 </style>
