@@ -3,7 +3,7 @@
     <p style="margin-bottom: 2rem;">기기 인증</p>
     <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
       <label class="login-label">
-        <input v-model="token" placeholder="토큰을 입력하세요..." autocomplete="false"/>
+        <input v-model="token" placeholder="토큰을 입력하세요..." autocomplete="false" type="password"/>
       </label>
       <button class="btn" @click="login">
         로그인
